@@ -1,0 +1,72 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript"> 
+	var cantidad1,cantidad2,costo,importe,n,n2,D1,D2,total,suma,pago,cambio; 
+	alert("BIENVENIDO")
+	cantidad1=prompt("Introduce la cantidad de producto DE Coca-cola","");
+	cantidad2=prompt("Introduce la cantidad de producto DE sprite","");
+	if (cantidad1>10)
+	{ 
+	alert("producto mayoreo Coca-cola")
+	} 
+else 
+{ 
+alert("producto menudeo Coca-cola")
+}
+if (cantidad2>10)
+	{ 
+	alert("producto mayoreo sprite")
+	} 
+else 
+{ 
+alert("producto menudeo sprite")
+}
+n=(cantidad1*135.00)
+n2=(cantidad1*118.50)
+D1=(cantidad2*115.00)
+D2=(cantidad2*102.50)
+total=n+n2+D1+D2
+ alert("El total de tus productos es: "+(total)+"$");
+pago=prompt("Ingresa la cantidad que pagaras","");
+
+  if (pago<total)
+  {
+  alert("El dinero es insuficiente","");
+  }
+  else
+  {
+  alert("Pago aceptado",""); 
+  } 
+
+  if (pago>total)
+  {
+  cambio=pago-total;   
+  }
+    else 
+  {
+  cambio=0;
+  }
+
+  </SCRIPT>
+</HTML>
+
+
+<caption>TABLA DE PRODUCTOS</caption>
+
+<BR>
+<I><script>document.write(" COCA-COLA "+n+" $");</script></I>
+<BR>
+<I><script>document.write(" COCA-COLA "++" $");</script></I>
+<BR>
+<I><script>document.write(" SPRITE "+D1+" $");</script></I>
+<BR>
+<I><script>document.write(" SPRITE "++" $");</script></I>
+<BR>
+<I><script>document.write("Su cambio es de: "+cambio+" $");</script></I>
+</table> 
+<BODY>
+	<BR>
+<I><script>document.write("El Total es: "+total+" $");</script></I>
+<BR>
+<I><script>document.write("Dinero pagado: "+pago+" $");</script></I>
+<BR>
+<I><script>document.write("Su cambio es de: "+cambio+" $");</script></I>
