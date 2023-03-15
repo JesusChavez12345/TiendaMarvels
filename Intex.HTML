@@ -1,0 +1,21 @@
+<HTML>
+<SCRIPT>
+var tiem,sec,mtro,min,cen,metro,vel;
+min=parseInt(prompt("MINUTOS RECORRIDOS"));
+sec=parseInt(prompt("SEGUNDOS RECORRIDOS "));
+cen=parseInt(prompt("CENTESIMAS RECORRIDAS "));
+mtro=parseInt(prompt("METROS RECORRIDOS"));
+tiem=min*60+sec+(cen/100);
+vel=(mtro/tiem)*3.6;
+document.write("LOS MINUTOS RECORRIDOS  :"+min+"<BR>");
+document.write("LOSSEGUNDOS REGISTRADOS  :"+sec+"<BR>");
+document.write("LAS CENTESIMAS RECORRIDAS  :"+cen+"<BR>");
+document.write("LOS METROS RECORRIDOS  :"+mtro+"<BR>");
+document.write("EL TIEMPO REGISTRADO  :"+tiem+"<BR><BR>");
+document.write("VELOCIDAD km/h : "+vel+"<BR>");
+</SCRIPT>
+</HTML>
+        
+        
+
+
